@@ -21,3 +21,10 @@ var port = process.env.PORT || 3000
 
 // Initialize Express
 var app = express();
+
+
+app.use(logger("dev"));
+app.use(bodyParser.urlencoded({
+    extended:false
+}));
+
