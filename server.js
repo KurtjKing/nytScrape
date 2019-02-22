@@ -29,5 +29,26 @@ app.use(bodyParser.urlencoded({
 }));
 
 // make public static
+app.use(express.static("public"));
+
+
+var exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs({
+   defaultLayout: "main"}));
+
+app.set("view engine","handlebars");
+
+
+mongoose.connect("mongodb://localhost/mongoscraper");
+var db = mongoose.connection;
+
+db.on("error", function(error){
+    console.log("error:", error);
+});
+
+db.once("open", function() {
+    console.log("Mongoose connection successful.");
+  });
 
 
