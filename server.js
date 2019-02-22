@@ -6,8 +6,8 @@ var express = require("express");
  path       = require("path");
 
 // Requiring Note and Article models
-var note    = require("./models/note.js");
-var article = require("./models/article.js");
+var Note    = require("./models/Note.js");
+var Article = require("./models/Article.js");
 
 // Scraping tools
 var request = require("request");
@@ -27,4 +27,7 @@ app.use(logger("dev"));
 app.use(bodyParser.urlencoded({
     extended:false
 }));
+
+// make public static
+
 
