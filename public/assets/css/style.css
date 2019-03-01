@@ -1,0 +1,17 @@
+#artDiv{
+    background-color:tan;
+    border: 2px black solid;
+    margin-top: 20px;
+}
+
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1538628474343-1e4661d5c026?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60);
+}
+
+hr{
+    background-color: #eee;
+    border: 0 none;
+    color: #eee;
+    height: 2px;
+}
