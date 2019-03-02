@@ -14,7 +14,7 @@ mongoose.connect(MONGODB_URI);
 // Initialize Express
 var app = express();
       
-// Configure middleware
+// Configure middleware   
 
 var routes= require("./controllers/routes.js");
 
