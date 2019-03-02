@@ -22,7 +22,7 @@ var routes= require("./controllers/routes.js");
 // Use morgan logger for logging requests
 app.use(logger("dev"));
 
-
+    
 // Parse application body as JSON
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());     
