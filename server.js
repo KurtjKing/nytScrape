@@ -13,19 +13,19 @@ mongoose.connect(MONGODB_URI);
 
 // Initialize Express
 var app = express();
-      
+
 // Configure middleware   
 
-var routes= require("./controllers/routes.js");
+var routes = require("./controllers/routes.js");
 
 
 // Use morgan logger for logging requests
 app.use(logger("dev"));
 
-    
+
 // Parse application body as JSON
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());     
+app.use(express.json());
 
 
 // Serve static content for the app from the "public" directory in the application directory.
@@ -38,12 +38,8 @@ app.set("view engine", "handlebars");
 
 app.use(routes);
 
-// Connect to the Mongo DB
-// mongoose.connect("mongodb://localhost/mongoheadline", { useNewUrlParser: true });
-
-
 
 // Start the server
-app.listen(PORT, function() {
+app.listen(PORT, function () {
   console.log("App running on port " + PORT + "!");
 });
