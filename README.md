@@ -14,7 +14,7 @@ This is a web based application. it takes data from a news source and populates 
 
 The applications scrapes the data and then stores it into a database. The data from the database is then shown on the client side browswer. 
 
-This application is deployed on heroku and you can view it here ________
+This application is deployed on heroku and you can view it here https://kkingscrape-live1.herokuapp.com/
 
 
 HOW IT WORKS
