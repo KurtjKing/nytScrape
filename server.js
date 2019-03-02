@@ -39,7 +39,7 @@ app.set("view engine", "handlebars");
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/mongoheadline", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/mongoheadline", { useNewUrlParser: true });
 
 
 
